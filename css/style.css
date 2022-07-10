@@ -79,6 +79,7 @@ body{
     padding: 0 15px;
     flex: 0 1 auto;
 }
+.flex{ display: flex; justify-content: space-between; align-items: center;  }
 
 .row .col-1 {
     flex-basis: 8.33%;
@@ -177,6 +178,8 @@ nav ul li a.active::after,.wrap-1 nav ul li a:hover::after {
     bottom: -4px;
     left: 20px;
 }
+.mobile{display: none;}
+.close{display: none;}
 
 /* banner */
 
@@ -263,14 +266,15 @@ background-position-y:  25%;}
 /* .wrap-9  */
 
 .wrap-9{margin: 40px 0; background-image: url(../img/banner/b14.png) ; background-color: #041e42; background-repeat: no-repeat;background-position: 20% 30%; }
-.newsletter{ display: flex; justify-content: space-between; align-items: center;padding: 40px 0;}
+.newsletter{ display: flex; ; align-items: center;padding: 40px 0;}
 .newsletter h4{font-size: 22px; font-weight: 700; color: #fff; padding-bottom: 15px;}
 .newsletter p{font-size: 14px; font-weight: 600; color: #818ea0;}
 .newsletter p span{color: #ffbd27;}
-.newsletter .form{ display: flex;}
-.newsletter .form input{ height: 3.125rem; font-size: 14px; padding: 0 1.25rem; width:300px; outline: none; border-radius: 5px 0 0 5px; 
+.newsletter-1{padding: 40px 0; justify-content: flex-end; float: right;}
+.newsletter-1 .form{ display: flex;}
+.newsletter-1 .form input{ height: 3.125rem; font-size: 14px; padding: 0 1.25rem; width:300px; outline: none; border-radius: 5px 0 0 5px; 
   border-top-right-radius: 0;border-bottom-right-radius: 0; border: none;}
-.newsletter .form button{background: #088178; white-space: nowrap; color: #fff;border-top-left-radius: 0; border-bottom-left-radius: 0;}
+.newsletter-1 .form button{background: #088178; white-space: nowrap; color: #fff;border-top-left-radius: 0; border-bottom-left-radius: 0;}
 
 /* footer  */
 
@@ -290,24 +294,19 @@ footer .content ul li {padding-bottom: 10px;}
     
 }
 @media screen and (max-width:1140px){
-    .row .col-t-2{flex-basis: 16.66%; max-width: 16.66%;}
-    .row .col-t-3{flex-basis: 25%; max-width: 25%;}
-    .row .col-t-4{flex-basis: 33.33%; max-width: 33.33%;}
-    .row .col-t-6{flex-basis: 50%; max-width: 50%;}
-    .row .col-t-8{flex-basis: 83.33%; max-width: 83.33%;}
-    .row .col-t-12{flex-basis: 100%; max-width: 100%;}
+    
     .wrap-3 .feature .fe-box{width: 138px;}
     .wrap-2 {height: 600px;}
     .banner-content-1 h2{font-size: 19px;}
     .banner-1,.banner-2{min-width: 0;}
 }
 @media screen and (max-width:980px){
-    .row .col-m-2{flex-basis: 16.66%; max-width: 16.66%;}
-    .row .col-m-3{flex-basis: 25%; max-width: 25%;}
-    .row .col-m-4{flex-basis: 33.33%; max-width: 33.33%;}
-    .row .col-m-6{flex-basis: 50%; max-width: 50%;}
-    .row .col-m-8{flex-basis: 83.33%; max-width: 83.33%;}
-    .row .col-m-12{flex-basis: 100%; max-width: 100%;}
+    .row .col-t-2{flex-basis: 16.66%; max-width: 16.66%;}
+    .row .col-t-3{flex-basis: 25%; max-width: 25%;}
+    .row .col-t-4{flex-basis: 33.33%; max-width: 33.33%;}
+    .row .col-t-6{flex-basis: 50%; max-width: 50%;}
+    .row .col-t-8{flex-basis: 83.33%; max-width: 83.33%;}
+    .row .col-t-12{flex-basis: 100%; max-width: 100%;}
     .fe-box h6 {padding: 9px 4px 6px 4px; font-size: 10px;}
     .wrap-3 .feature .fe-box {width: 105px;}
     .wrap-5 .banner {padding-top: 40px;}
@@ -317,6 +316,49 @@ footer .content ul li {padding-bottom: 10px;}
     .newsletter .form input {width: 235px;}   
     h2{font-size: 45px;}
 }
+@media screen and (max-width:768px){
+    .row .col-m-2{flex-basis: 16.66%; max-width: 16.66%;}
+    .row .col-m-3{flex-basis: 25%; max-width: 25%;}
+    .row .col-m-4{flex-basis: 33.33%; max-width: 33.33%;}
+    .row .col-m-6{flex-basis: 50%; max-width: 50%;}
+    .row .col-m-8{flex-basis: 83.33%; max-width: 83.33%;}
+    .row .col-m-12{flex-basis: 100%; max-width: 100%;}
+    nav ul li a.active::after, .wrap-1 nav ul li a:hover::after { content: "";width: 10%;   height: 2px;   background: #088178;position: absolute;bottom: 8px;left: 20px;}
+   .navbar{position: fixed; top: 0; height: 100vh; width: 0; right: 0; background-color: #e3e6f3; box-shadow: 0 40 60px rgba(0, 0, 0,0.1); padding-top: 60px; transition: 0.3s;}
+   .navbar nav ul {display: block; }
+   .mobile{display: flex; justify-content: flex-end; }
+   .mobile .mob{line-height: 40px;}
+   .mob span{font-size: 20px; color: #1a1a1a; padding-left: 20px;}
+   .navbar.active{ width: 300px;}
+   .close{position: absolute;top: 20px; left: 20px; color: #1a1a1a; font-size: 20px; display: block;}
+   .bag{display: none;}
+   
+}
+@media screen and (max-width:480px){
+    .row .col-p-2{flex-basis: 16.66%; max-width: 16.66%;}
+    .row .col-p-3{flex-basis: 25%; max-width: 25%;}
+    .row .col-p-4{flex-basis: 33.33%; max-width: 33.33%;}
+    .row .col-p-6{flex-basis: 50%; max-width: 50%;}
+    .row .col-p-8{flex-basis: 83.33%; max-width: 83.33%;}
+    .row .col-p-12{flex-basis: 100%; max-width: 100%;}
+    h2 {font-size: 27px;}
+    h1 {font-size: 33px;line-height: 50px;}
+    .home button{padding: 6px 82px 10px 65px;}
+    .wrap-2{height: 500px;}
+    .home{padding: 150px 0 0 0;}
+    .feature{padding: 20px 0;}
+    .wrap-5 h2{font-size: 19px;}
+    .banner-content-1 h2 {
+        font-size: 21px;
+    }
+    .banner-content-1 h3 {
+        font-size: 16px;
+    }
+    .banner-1,.banner-2,.banner-3,.banner-4,.banner-5{margin: 20px 0;}
+    .newsletter-1 .form input{width: 240px;}
+    .space {margin: 20px 0;}
+}
+
 
 
 
