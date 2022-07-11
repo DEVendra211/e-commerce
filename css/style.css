@@ -332,6 +332,7 @@ footer .content ul li {padding-bottom: 10px;}
    .navbar.active{ width: 300px;}
    .close{position: absolute;top: 20px; left: 20px; color: #1a1a1a; font-size: 20px; display: block;}
    .bag{display: none;}
+  
    
 }
 @media screen and (max-width:480px){
