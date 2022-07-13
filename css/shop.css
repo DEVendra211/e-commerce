@@ -39,26 +39,63 @@
 .blog-detail a:hover::after{background-color: #088178;}
 .replace{position: relative;}
 .replace h1{font-size: 70px; font-weight: 700; position: absolute; top: 100px; left: -530px; color: #c9cbce; z-index: -9;} 
+.shop-header h2{color: #fff;}
+.shop-header p{color: #fff;}
 
 
 @media screen and (max-width:1140px){
     .replace h1{font-size: 70px; font-weight: 700; position: absolute; top: 100px; left: -420px; color: #c9cbce; z-index: -9;} 
+    .shop-header h2{color: #fff;}
+    .shop-header p{color: #fff;}
 }
 @media screen and (max-width:980px){
     .replace h1{font-size: 70px; font-weight: 700; position: absolute; top: 100px; left: -385px; color: #c9cbce; z-index: -9;} 
-    .wrap-2{height: 25vh;}
-    #blog-header{height: 25vh;}
+    .shop-header h2{color: #fff;}
+    .shop-header p{color: #fff;}
+    
+    #blog-header{ height: 50vh;}
+    .shop-header{padding-top: 50px;}
+    .wrap-2{height: 40vh;}
+    .about-header{padding: 55px;}
 }
 @media screen and (max-width:768px){
-    .replace h1{font-size: 70px; font-weight: 700; position: absolute; top: 100px; left: -350px; color: #c9cbce; z-index: -9;} 
+    .replace h1{font-size: 70px; font-weight: 700; position: absolute; top: 100px; left: -300px; color: #c9cbce; z-index: -9;} 
     #blog-header{background: url(../img/banner/b19.jpg)no-repeat ;height: 30vh; width: 100%; background-size: cover;}
+    .wrap-2{height: 25vh;}
 }
 
 @media screen and (max-width:480px){
     .replace h1 { font-size: 70px; font-weight: 700;  position: absolute;  top: -385px; color: #c9cbce; left: 20px; z-index: -9;}
     .blog-detail { padding-top: 30px;}
-    .shop-header{padding-top: 50px;}
+    .shop-header{padding-top: 50px; ;}
+    .shop-header h2{color: #fff;}
+    .shop-header p{color: #fff;}
+    .wrap-2{height: 25vh;}
+    #about-header{height: 25vh;}
+    #blog-header{height: 30vh;}
+    
 }
 
 
+/* about header  */
 
+#about-header{background: url(../img/about/banner.png) no-repeat center/cover; height: 40vh;}
+.head img{width: 100%;}
+.head{padding-top: 50px;}
+.head-detail{padding-top: 80px;}
+.about-app{text-align: center;}
+.about-app a{text-decoration: dashed;}
+.about-app .video{width: 70%; height: 100%; margin: 30px auto 0 auto;} 
+.about-app .video video{width: 100%; height: 100%; border-radius: 20px;} 
+
+@media screen and (max-width:480px){
+    
+    .wrap-2{height: 25vh;}
+    #about-header{height: 25vh;}
+   
+    
+}
+@media screen and (max-width:768px){
+   .about-header{padding-top: 85px;}
+   #about-header{height: 25vh;}
+}
