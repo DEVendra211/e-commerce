@@ -27,3 +27,29 @@
         padding-top: 50px;
     }
 }
+.sec{margin: 40px 0;}
+.rec{padding: 40px 0;}
+.cart{overflow-x: auto;}
+.cart table {width: 100%; border-collapse: collapse; table-layout: fixed; white-space: nowrap;}
+.cart table img{width:70px;}
+.cart table td:nth-child(1){width: 100px; text-align: center;}
+.cart table td:nth-child(2){width: 150px; text-align: center;}
+.cart table td:nth-child(3){width: 250px; text-align: center;}
+.cart table td:nth-child(4),table td:nth-child(5),table td:nth-child(6){width: 150px; text-align: center;}
+.cart table input{width: 70px; padding: 10px 5px 10px 15px;} 
+.cart table thead{border: 1px solid #e2e9e1; border-left: none;border-right: none;}
+.cart table thead td{font-weight: 700; font-size: 13px; padding: 18px 0;}
+.cart table tbody tr td{padding-top: 15px;}
+.coupon div{margin-top: 20px; }
+.coupon input{padding: 10px 20px;  border-radius: 5px;  outline: none; font-weight: 600; width: 60%; border: 1px solid;}
+.coupon button{background-color: #088178; color: #fff; padding: 12px 20px;}
+.subtotal{border: 1px solid #e2e9e1; padding: 30px; margin-bottom: 30px; }
+.subtotal table{border: 1px solid; width: 100%; border-collapse: collapse;}
+.subtotal table tr td{padding: 10px 20px; border: 1px solid #e2e9e1;}
+.subtotal h3{padding-bottom: 10px;}
+.subtotal button{margin-top: 10px; color: #fff; background-color: #088178;}
+
+@media screen and (max-width:768px){
+   /* .cart{overflow-x: auto;} */
+   
+}
