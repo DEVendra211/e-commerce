@@ -78,6 +78,11 @@
 }
 
 
+/* sproduct ani  */
+.box{position: relative; }
+.over-img{background: url(../img/products/f1.jpg) no-repeat ; height: 550px; width: 550px;background-color: #fff; border: 1px solid; position: absolute; border-radius: 10px; overflow: hidden;}
+
+
 /* about header  */
 
 #about-header{background: url(../img/about/banner.png) no-repeat center/cover; height: 40vh;}

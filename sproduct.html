@@ -66,26 +66,38 @@
                             <div class="small-img">
                                 <img src="./img/products/f4.jpg" class="smallimg" width="100%" alt="">
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
                 <div class="col-6 col-p-12">
+                    
                     <div class="single-pro-detail">
+                        <div class="box">
+                            <div class="over-img">
+    
+                            </div>
+                        </div>
                         <h6>Home/T-shirt</h6>
                         <h4>Men's Fashion T-shirts</h4>
                         <h2>$139.00</h2>
-                        <select><option selected disabled>--Select Size--</option>
+                        <select>
+                            <option selected disabled>--Select Size--</option>
                             <option>XXXL</option>
                             <option>XXL</option>
                             <option>XL</option>
                             <option>LARGE</option>
                             <option>SMALL</option>
                         </select>
-                       <div><label> <input type="number" min="0" max="10" value="1"></label>
-                    <button class="normal">Add To Cart</button></div>
-                    <h4>Product details</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugit aliquam ratione repudiandae placeat deleniti vero itaque, alias explicabo animi earum fuga, quisquam obcaecati officiis maiores cupiditate voluptatum numquam quidem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, architecto? Minima expedita cumque dolor tempora porro beatae adipisci quae quia.</p>
+                        <div><label> <input type="number" min="0" max="10" value="1"></label>
+                            <button class="normal add-cart">Add To Cart</button>
+                        </div>
+                        <h4>Product details</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugit aliquam ratione
+                            repudiandae placeat deleniti vero itaque, alias explicabo animi earum fuga, quisquam
+                            obcaecati officiis maiores cupiditate voluptatum numquam quidem. Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Quod, architecto? Minima expedita cumque dolor tempora porro
+                            beatae adipisci quae quia.</p>
                     </div>
                 </div>
             </div>
@@ -102,12 +114,12 @@
             <div class="row">
                 <div class="col-3 col-m-6 col-p-12">
                     <div class="item-row">
-                        <div class="item">
-                            <img src="./img/products/f1.jpg" alt="">
+                        <div class="item ">
+                            <img class="item-image" src="./img/products/f1.jpg" alt="">
                         </div>
                         <div class="des">
                             <span>ADIDAS</span>
-                            <h5>printed shirts</h5>
+                            <h5 class="item-title">printed shirts</h5>
                             <div class="star">
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
@@ -115,9 +127,9 @@
                                 <span class="fa fa-star"></span>
                                 <span class="fa fa-star"></span>
                             </div>
-                            <h4>$78</h4>
+                            <h4 class="item-price">$78</h4>
                         </div>
-                        <a href="#"><span class="fa fa-shopping-cart cart"></span></a>
+                        <a href="#" class="add-cart"><span class="fa fa-shopping-cart cart"></span></a>
                     </div>
 
                 </div>
@@ -138,7 +150,7 @@
                             </div>
                             <h4>$78</h4>
                         </div>
-                        <a href="#"><span class="fa fa-shopping-cart cart"></span></a>
+                        <a href="#" class="add-cart"><span class="fa fa-shopping-cart cart"></span></a>
                     </div>
 
                 </div>
@@ -159,7 +171,7 @@
                             </div>
                             <h4>$78</h4>
                         </div>
-                        <a href="#"><span class="fa fa-shopping-cart cart"></span></a>
+                        <a href="#" class="add-cart"><span class="fa fa-shopping-cart cart"></span></a>
                     </div>
 
                 </div>
@@ -180,7 +192,7 @@
                             </div>
                             <h4>$78</h4>
                         </div>
-                        <a href="#"><span class="fa fa-shopping-cart cart"></span></a>
+                        <a href="#" class="add-cart"><span class="fa fa-shopping-cart cart"></span></a>
                     </div>
 
                 </div>
@@ -280,17 +292,20 @@
     </footer>
 
 
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/app.js"></script>
     <script>
-        var mainimg=document.querySelector(".main-image")
-        var smallimg=document.querySelectorAll(".smallimg")
+        var mainimg = document.querySelector(".main-image")
+        var smallimg = document.querySelectorAll(".smallimg")
 
         smallimg[0].onclick = function () {
             mainimg.src = smallimg[0].src;
         }
-        smallimg[1].onclick =function () {
+        smallimg[1].onclick = function () {
             mainimg.src = smallimg[1].src;
         }
-        smallimg[2].onclick =function () {
+        smallimg[2].onclick = function () {
             mainimg.src = smallimg[2].src;
         }
         smallimg[3].onclick = function () {
@@ -298,9 +313,25 @@
         }
 
 
+        var box=document.querySelector(".box")
+        var overbox=document.querySelector(".over-img")
+
+        mainimg.addEventListener('mouseover',function () {
+            overbox.style.display="block";
+            // overbox.style.zindex="10";
+        })
+
+        mainimg.addEventListener("mousemove",function (e) {
+            // console.log(e.clientX);
+           // o.textContent=`x=${e.clientX-this.offsetLeft+2} , y=${e.clientY-this.offsetTop+2}`;
+        overbox.style.backgroundPosition=`${+(e.clientX-this.offsetLeft)/4}% ${(e.clientY-this.offsetTop)/4}%`;
+        })
+
+        mainimg.addEventListener("mouseout",function () {
+            overbox.style.display="none";
+        })
+        
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/app.js"></script>
 </body>
 
 </html>
