@@ -315,6 +315,7 @@ footer .content ul li {padding-bottom: 10px;}
     .banner-content-1 h2 {font-size: 14px;}   
     .newsletter .form input {width: 235px;}   
     h2{font-size: 45px;}
+    
 }
 @media screen and (max-width:768px){
     .row .col-m-2{flex-basis: 16.66%; max-width: 16.66%;}
@@ -332,6 +333,14 @@ footer .content ul li {padding-bottom: 10px;}
    .navbar.active{ width: 300px;}
    .close{position: absolute;top: 20px; left: 20px; color: #1a1a1a; font-size: 20px; display: block;}
    .bag{display: none;}
+   .banner-content-1 h2 {line-height: 26px;}
+.banner-content-1 h3 {margin-top: 10px;}
+   .banner-content h2 {font-size: 25px;}
+   .fe-box h6 {font-size: 9px;}
+   .feature {padding: 30px 0 0 0;}
+   
+    
+
   
    
 }

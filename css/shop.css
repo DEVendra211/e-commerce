@@ -55,14 +55,14 @@
     
     #blog-header{ height: 50vh;}
     .shop-header{padding-top: 50px;}
-    .wrap-2{height: 40vh;}
+    .wrap-2{height: 16vh;}
     .about-header{padding: 55px;}
 }
 @media screen and (max-width:768px){
     .replace h1{font-size: 70px; font-weight: 700; position: absolute; top: 100px; left: -300px; color: #c9cbce; z-index: -9;} 
-    #blog-header{background: url(../img/banner/b19.jpg)no-repeat ;height: 30vh; width: 100%; background-size: cover;}
-    .wrap-2{height: 25vh;}
-   
+    #blog-header{background: url(../img/banner/b19.jpg)no-repeat ;; width: 100%; background-size: cover;}
+    .wrap-2{height: 40vh;}
+    .newsletter-1 {padding: 40px 0; float: left;}   
 }
 
 @media screen and (max-width:480px){
