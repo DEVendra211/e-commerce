@@ -315,7 +315,7 @@ footer .content ul li {padding-bottom: 10px;}
     .banner-content-1 h2 {font-size: 14px;}   
     .newsletter .form input {width: 235px;}   
     h2{font-size: 45px;}
-    
+    .over-img{display: none;}
 }
 @media screen and (max-width:768px){
     .row .col-m-2{flex-basis: 16.66%; max-width: 16.66%;}
